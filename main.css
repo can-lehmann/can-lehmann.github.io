@@ -11,13 +11,20 @@ body {
   
   align-items: center;
   
+  box-sizing: border-box;
   margin: 0;
   padding: 24px;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  padding: 0;
+  margin: 0;
 }
 
 @media (max-width: 600px) {
   body {
     padding: 12px;
+    max-width: 100%;
   }
 }
 
@@ -32,13 +39,7 @@ main {
 }
 
 article h1 {
-  padding: 0;
-  margin: 0;
   text-align: center;
-}
-
-article p {
-  margin: 0;
 }
 
 article a {
@@ -46,9 +47,30 @@ article a {
   color: inherit;
 }
 
+article code {
+  font-family: monospace;
+  font-size: 1rem;
+  background: #eaeaea;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 3px;
+}
+
+article code.block {
+  padding: 6px;
+}
+
 article a:hover {
   background: #000;
   color: #fff;
+}
+
+article img {
+  max-width: 100%;
+}
+
+article ul {
+  padding-left: 24px;
 }
 
 

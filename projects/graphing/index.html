@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2023 Can Joshua Lehmann
+-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Graphing | Can Lehmann</title>
+    <link rel="stylesheet" href="/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>Graphing</h1>
+        <p>
+          Graphing is a simple graphing application for Linux.
+        </p>
+        <img src="img/main.png"></img>
+        <p>
+          Graphing supports the following functions:
+        </p>
+        <ul>
+          <li>Functions: <code>sin</code>, <code>cos</code>, <code>tan</code>, <code>arcsin</code>, <code>arccos</code>, <code>arctan</code>, <code>floor</code>, <code>ceil</code>, <code>abs</code>, <code>max</code>, <code>min</code>, <code>sqrt</code>, <code>cbrt</code>, <code>ln</code>, <code>sum</code>, <code>prod</code></li>
+          <li>Operators: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>^</code> (exponentiation), <code>%</code> (modulo)</li>
+          <li>Constants: <code>pi</code>, <code>e</code> </li>
+        </ul>
+        
+        <h2>Installation</h2>
+        <p>
+          Graphing requires the development version of <a href="https://github.com/can-lehmann/owlkettle">Owlkettle</a>.
+          Check out the installation instructions <a href="https://github.com/can-lehmann/owlkettle#installation">here</a>.
+        </p>
+        <code class="block">
+        $ git clone https://github.com/can-lehmann/Graphing.git<br>
+        $ cd Graphing<br>
+        $ nimble install owlkettle@#head<br>
+        $ nimble install geometrymath<br>
+        $ nim compile -r -d:adwaita12 -d:release main<br>
+        </code>
+        
+        <h2>Derivatives</h2>
+        <p>
+          Graphing can automatically compute derivatives of functions.
+          The <code>'</code> operator returns the derivative of the given function.
+          Here we show the polynomial <code>1/5 (x - 1)(x + 2)(x - 3)</code> and its derivative.
+          The derivative is computed using <code>(x -> 1/5 (x - 1)(x + 2)(x - 3))'(x)</code>.
+        </p>
+        <img src="img/derivative.png"></img>
+        
+        <h2>Polar Plots</h2>
+        <p>
+          A polar plot is a plot that uses a polar coordinate system.
+          It takes an angle as the input and maps it to a radius.
+        </p>
+        <img src="img/polar.png"></img>
+        
+        <h2>Export</h2>
+        <p>
+          You can export graphs as images by selecting "Export" in the main menu.
+          The export dialog allows you to customize the graph before exporting.
+        </p>
+        <img src="img/export.png"></img>
+        <p>
+          Expressions of functions can be copied as LaTeX code.
+          Click the copy button at the bottom of the function properties to copy its LaTeX source to your clipboard.
+        </p>
+      </article>
+      <footer>
+        <div>Powered by GitHub Pages</div>
+        <div>
+          <a href="/imprint.html">Impressum / Imprint</a>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

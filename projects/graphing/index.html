@@ -38,17 +38,21 @@ Copyright (c) 2023 Can Joshua Lehmann
           Check out the installation instructions <a href="https://github.com/can-lehmann/owlkettle#installation">here</a>.
         </p>
         <code class="block">
-        $ git clone https://github.com/can-lehmann/Graphing.git<br>
-        $ cd Graphing<br>
-        $ nimble install owlkettle@#head<br>
-        $ nimble install geometrymath<br>
-        $ nim compile -r -d:adwaita12 -d:release main<br>
+        nimble install https://github.com/can-lehmann/Graphing
         </code>
+        
+        <h3>Building from source</h3>
         
         <p>
           Graphing is open-source.
           You can find the source code on <a href="https://github.com/can-lehmann/Graphing">GitHub</a>.
         </p>
+        
+        <code>
+        git clone https://github.com/can-lehmann/Graphing<br>
+        cd Graphing<br>
+        nimble build
+        </code>
         
         <h2 id="features">Derivatives</h2>
         <p>
